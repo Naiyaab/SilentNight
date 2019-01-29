@@ -1,7 +1,17 @@
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+
 /* Header Styling */
 .logo {
     background-color: #1c5191;
-    position: fixed;
+    position: relative;
     width: 100%;
     left: 0;
     top: 0;
@@ -10,35 +20,33 @@
 .logo img {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 243px;
+  padding-left: 200px;
 }
 
 /* Navigation Links styling */
-ul {
+.logo ul {
     list-style-type: none;
     margin: 0 auto;
-    width: 1500px;
-    padding: 0px 0px 0px 0px;
+    width: 890px;
+    padding: 0px 0px 5px 0px;
     overflow: hidden;
     background-color: #1c5191;
     text-align: center;
-    
   }
   
-  li {
+  .logo li {
     float: left;
-    font-family: sans-serif;
   }
   
-  li a {
+  .logo li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 47px 10px 47px;
+    padding: 10px 15px 10px 15px;
     text-decoration: none;
   }
   
-  li a:hover {
+  .logo li a:hover {
     background-color: white;
     color: #1c5191;
   }
@@ -47,12 +55,14 @@ ul {
 .footer {
     background-color: #1c5191;
     color: white;
-    position: fixed;
+    position:fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: left;
-    padding: 20px 150px 20px 150px;
+    padding-top: 10px;
+    padding-left: 180px;
+    height: 10%;
 }
 
 .footer p {
@@ -68,7 +78,7 @@ ul {
   .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding-left: 93px;
     height: 300px; /* Should be removed. Only for demonstration */
   }
   
@@ -78,3 +88,55 @@ ul {
     display: table;
     clear: both;
   }
+
+/* Inline Buttons */
+.inline-buttons{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: #1c5191;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 2px;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+/* BreadCrumbs */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  margin-top: 0px;
+  margin-left: 135px;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "\003e";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: none;
+  font-weight: bold;
+}
