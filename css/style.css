@@ -1,0 +1,80 @@
+/* Header Styling */
+.logo {
+    background-color: #1c5191;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.logo img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 243px;
+}
+
+/* Navigation Links styling */
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 1500px;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    background-color: #1c5191;
+    text-align: center;
+    
+  }
+  
+  li {
+    float: left;
+    font-family: sans-serif;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 47px 10px 47px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+    color: #1c5191;
+  }
+
+/* Footer Styling */
+.footer {
+    background-color: #1c5191;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    padding: 20px 150px 20px 150px;
+}
+
+.footer p {
+    line-height: 7px;
+    font-size: 12px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
