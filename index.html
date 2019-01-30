@@ -1,63 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<!-- Link Style Sheet-->
-<link rel="stylesheet" href="css/style.css">
-<!-- Add Icons CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<title>Title of the document</title>
+<head>
+  <meta charset="UTF-8">
+  <!-- Link Style Sheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Add Icons CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"> <!-- Add scrips-->
+  <script type="text/javascript" src="../SilentNight/js/gallery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <title>Title of the document</title>
 </head>
 
-
+<!-- Logo -->
 <header class="logo container">
-  <img src="../SilentNight/img/logo_1.png">
-    <ul>
-      <li><a href="#home"><i class="fa fa-home"></i></a></li>
-      <li><a href="#news">Mattresses</a></li>
-      <li><a href="#contact">Beds</a></li>
-      <li><a href="#about">Bedding</a></li>
-      <li><a href="#home">Accessories</a></li>
-      <li><a href="#news">Mattress-Now</a></li>
-      <li><a href="#contact">Cots & Kids</a></li>
-      <li><a href="#about">Sale</a></li>
-      <li><a href="#about">Silentnight.co.uk</a></li>
-    </ul>
+  <a href="#home">
+    <img src="../SilentNight/img/logo_1.png">
+  </a>
+
+  <!-- Navigation Bar -->
+  <ul>
+    <li><a href="#home"><i class="fa fa-home"></i></a></li>
+    <li><a href="#news">Mattresses</a></li>
+    <li><a href="#contact">Beds</a></li>
+    <li><a href="#about">Bedding</a></li>
+    <li><a href="#home">Accessories</a></li>
+    <li><a href="#news">Mattress-Now</a></li>
+    <li><a href="#contact">Cots & Kids</a></li>
+    <li><a href="#about">Sale</a></li>
+    <li><a href="#about">Silentnight.co.uk</a></li>
+  </ul>
 </header>
-
-
 
 <body>
   <div class="container">
-    <div class="inline-buttons">
-      <button class="button">Free Delivery</button>
-      <button class="button">Comfort Guarantee</button>
-      <button class="button">Quality Assured</button>
-      <button class="button">Special Offers</button>
+    <!-- Inline Buttons -->
+    <div class="inner">
+      <div class="inline-buttons">
+        <button class="button">Free Delivery</button>
+        <button class="button">Comfort Guarantee</button>
+        <button class="button">Quality Assured</button>
+        <button class="button">Special Offers</button>
+      </div>
+
+      <!-- BreadCrumbs -->
+      <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Mattresses</a></li>
+        <li><span style="color: #01447e; font-weight: bold">Silentnight Miracoil Memory Mattress</li>
+      </ul>
     </div>
 
-    <ul class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Mattresses</a></li>
-      <li><a href="#">Silentnight Miracoil Memory Mattress</a></li>
-    </ul>
-</div>
-<body>
+    <!-- Portfolio Item Row -->
+    <div class="row">
+      <div class="col-md-6" style="margin-left: 100px">
+        <img id="0" class="preview normal" src="../SilentNight/img/memory-miracoil-full-matt_1.jpg" alt="preview" /><br />
+        <img id="1" class="thumb normal" src="../SilentNight/img/memory-miracoil-full-matt_1.jpg" alt="image1" onclick="preview(this)" />
+        <img id="2" class="thumb normal" src="../SilentNight/img/signature-memory-miracoil-lt-close-up-angle-matt_1 (1).jpg"
+          alt="image2" onclick="preview(this)" />
+        <img id="3" class="thumb normal" src="../SilentNight/img/signature-memory-miracoil-rt-angle-matt_2.jpg" alt="image3"
+          onclick="preview(this)" />
+      </div>
 
-
-<div class="footer">
-  <div class="row">
-    <div class="column">
-      <p>Silentnight Group Limited. Registered in England 7525259 Vat Registeration No GB 108 2580 29 Registered</p>
-      <p>Office: Silentnight Group Limited, Long Ing Business Park, Longing Lane, Barnoldswick, Lancashire BB18 6BJ</p>
+      <div class="col-md-4">
+        <!-- Product Description-->
+        <h2>Silentnight Miracoil Memory Mattress</h2>
+        <h2><strong>£419.00</strong></h2>
+        <li>Miracoil zoned spring system</li>
+        <li>Body moulding memory foam</li>
+        <li>Luxurious soft knit cover for extra comfort</li>
+        <li>Mattress Depth: 26cm</li>
+        <li>Comfort Level: Firm</li>
+        <!-- Inline Form for Dropdown -->
+        <br />
+        <div class="inline">
+          Size <span style="color: red">*</span><select name="size">
+            <option value="double">Double</option>
+            <option value="single">Single</option>
+            <option value="king">King</option>
+            <option value="queen">Queen</option>
+          </select>
+        </div>
+        <!-- Add to Basket -->
+        <button class="button2">Add to Basket</button>
+      </div>
     </div>
-    <div class="column">
-        <p>Silentnight Group Limited. Registered in England 7525259 Vat Registeration No GB 108 2580 29 Registered</p>
-        <p>Office: Silentnight Group Limited, Long Ing Business Park, Longing Lane, Barnoldswick, Lancashire BB18 6BJ</p>
-    </div>
-  </div>
-</div>
 
+    <!-- Portfolio Item Row -->
+    <div class="row2">
+      <div class="col-md-6" style="margin-left: 100px; line-height: 15px">
+        <img src="../SilentNight/img/email icon.png" style="float: left; padding-right: 5px">
+        <p style="color: #1c5191"><strong>Sign up for our latest deals and offers</strong><br /><span style="font-size: 12px;">To
+            subscrive just enter your email address and press sign up.</span></p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-inline form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+      </div>
+</body>
+
+
+<!-- Footer 
+    <div class="footer">
+      <div class="row">
+        <div class="column">
+          <p>Silentnight Group Limited. Registered in England 7525259 Vat Registeration No GB 108 2580 29 Registered</p>
+          <p>Office: Silentnight Group Limited, Long Ing Business Park, Longing Lane, Barnoldswick, Lancashire BB18 6BJ</p>
+        </div>
+        <div class="column">
+          <p>Silentnight Group Limited. Registered in England 7525259 Vat Registeration No GB 108 2580 29 Registered</p>
+          <p>Office: Silentnight Group Limited, Long Ing Business Park, Longing Lane, Barnoldswick, Lancashire BB18 6BJ</p>
+        </div>
+      </div>
+    </div>
+-->
 
 </html>

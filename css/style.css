@@ -2,12 +2,6 @@ html {
   font-family: sans-serif;
 }
 
-.container {
-  max-width: 1290px;
-  margin: 0 auto;
-}
-
-
 /* Header Styling */
 .logo {
     background-color: #1c5191;
@@ -20,7 +14,7 @@ html {
 .logo img {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 200px;
+  padding-left: 110px;
 }
 
 /* Navigation Links styling */
@@ -55,7 +49,7 @@ html {
 .footer {
     background-color: #1c5191;
     color: white;
-    position:fixed;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -70,25 +64,7 @@ html {
     font-size: 12px;
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Create two equal columns that floats next to each other */
   .column {
-    float: left;
-    width: 50%;
-    padding-left: 93px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
 /* Inline Buttons */
 .inline-buttons{
   list-style-type: none;
@@ -99,10 +75,10 @@ html {
 }
 
 .button {
-  background-color: white; /* Green */
+  background-color: white;
   border: none;
   color: #1c5191;
-  padding: 15px 60px;
+  padding: 10px 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -116,27 +92,120 @@ html {
 }
 
 /* BreadCrumbs */
-ul.breadcrumb {
+ul.breadcrumbs {
   padding: 10px 16px;
   list-style: none;
   margin-top: 0px;
-  margin-left: 135px;
+  margin-left: 90px;
 }
-ul.breadcrumb li {
+ul.breadcrumbs li {
   display: inline;
   font-size: 12px;
 }
-ul.breadcrumb li+li:before {
+ul.breadcrumbs li+li:before {
   padding: 8px;
   color: black;
   content: "\003e";
 }
-ul.breadcrumb li a {
+ul.breadcrumbs li a {
   color: black;
   text-decoration: none;
 }
-ul.breadcrumb li a:hover {
+ul.breadcrumbs li a:hover {
   color: #01447e;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Image Slider */
+.preview {
+  width: 500px;
+  height: 360px
+}
+   
+  .thumb {
+  width: 107px;
+  margin-right: 3px;
+}
+   
+  .selected {
+  border: 1px solid #1c5191;
+  padding: 2px;
+}
+
+/* Dropdown Size Form */
+.inline {
+  color: #1c5191;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.inline select {
+  width: 50%;
+  margin-left: 120px;
+  color: #1c5191;
+  padding: 5px;
+}
+
+/* Add to Basket Button */
+.button2{
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 10px 24px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  float: right;
+}
+
+@media (min-width: 768px) {
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 45%;
+}
+}
+
+.col-md-4 h2 {
+  font-size:25px;
+  color: #1c5191;
+  font-weight: 400;
+}
+
+.col-md-4 li {
+  color: #1c5191;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.row2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
 }
