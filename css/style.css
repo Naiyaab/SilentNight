@@ -196,15 +196,3 @@ ul.breadcrumbs li a:hover {
   padding-bottom: 20px;
   border-bottom: 1px solid gray;
 }
-
-hr {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
-  border-style: solid none;
-  border-width: 1px 0;
-  margin: 18px 0;
-}
