@@ -9,6 +9,7 @@ html {
     width: 100%;
     left: 0;
     top: 0;
+    color: white;
 }
 
 .logo img {
@@ -47,23 +48,19 @@ html {
 
 /* Footer Styling */
 .footer {
-    background-color: #1c5191;
-    color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    padding-top: 10px;
-    padding-left: 180px;
-    height: 10%;
+  background-color: #1c5191;
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: white;
 }
 
-.footer p {
-    line-height: 7px;
-    font-size: 12px;
+.footer img {
+display: inline-block;
+vertical-align: middle;
+padding-left: 30px;
 }
-
 /* Inline Buttons */
 .inline-buttons{
   list-style-type: none;
